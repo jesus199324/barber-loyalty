@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Barber Loyalty</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <section class="card">
+
+      <h1>BARBERÍA XYZ</h1>
+
+      <p class="cliente" id="nombreMostrado">Martín Pérez</p>
+
+      <p class="id-cliente" id="idCliente"></p>
+
+      <select id="selectorCliente">
+        <option value="0">Martín Pérez</option>
+        <option value="1">Juan Rodríguez</option>
+      </select>
+
+      <button id="nuevoCliente">
+        + NUEVO CLIENTE
+      </button>
+
+      <div id="formularioCliente" style="display: none;">
+
+  <input
+    type="text"
+    id="nombreCliente"
+    placeholder="Nombre completo"
+  >
+
+  <input
+    type="tel"
+    id="telefonoCliente"
+    placeholder="WhatsApp"
+  >
+
+  <input
+    type="date"
+    id="cumpleanosCliente"
+  >
+
+  <button id="guardarCliente">
+    GUARDAR CLIENTE
+  </button>
+
+</div>
+
+      <h2 id="contador">4 / 5 visitas</h2>
+
+      <div class="puntos" id="puntos">
+        <span class="activo"></span>
+        <span class="activo"></span>
+        <span class="activo"></span>
+        <span class="activo"></span>
+        <span></span>
+      </div>
+
+      <p class="estado" id="estado">
+        PRÓXIMO BENEFICIO
+      </p>
+
+      <h3>Corte gratis</h3>
+
+      <button id="sumarVisita">
+        REGISTRAR VISITA
+      </button>
+
+      <button id="usarBeneficio" style="display: none;">
+        USAR BENEFICIO
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
